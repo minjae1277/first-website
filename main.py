@@ -1,4 +1,4 @@
-import streamlist as st
+import streamlit as st
 st.title("my first web service!")
 name=st.text_input("입력을 입력해주세요!")
 menu=st.selectbox("좋아하는 음식을 선택해주세요!",['섹섹','베라','그릭요거트','파스타']
