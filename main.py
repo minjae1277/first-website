@@ -26,7 +26,7 @@ def function():
 st.code(sample_code, language="python")
 
  # 일반 텍스트
-st.text('일반적인 텍스트를 입력해 보았습니다.')
+st.text('우진이 팬들을 위한 팬클럽을 만들어 보았습니다.')
            
 # 마크다운 문법 지원
 st.markdown('streamlit은 **마크다운 문법을 지원**합니다.')
