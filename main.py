@@ -1,7 +1,30 @@
 import streamlit as st
-st.title("my first web service!")
-name=st.text_input("입력을 입력해주세요!")
-menu=st.selectbox("좋아하는 음식을 선택해주세요!",['섹섹','베라','그릭요거트','파스타'])
-if st.button("인사말 생성하기"):
-    st.write  (name,"님!당신이 좋아하는 음식은"+menu+"이군요!저도 좋아요!")                
-                  
+
+#타이틀 적용 예시
+st.title('정우진 공식사이트')
+
+#특수 이모티콘 삽입 예시
+#emogi: https://streamlit-emogi-shortcodes-streamlit-app-gwck.streamlit.app/
+st.title('스마일 :sunglasses:')
+
+# header 적용
+st.header('헤더는 섹션의 제목 :sparkles:')
+
+#subheader 적용
+st.subheader('subheader는 섹션의 부제목')
+
+
+
+# 캡션 적용
+st.caption('            )
+
+# 코드 표시
+sample_code = '''
+def function():
+    print('hello, world')
+    '''
+st.code(sample_code, language="python")
+
+ # 일반 텍스트
+st.text('일반적인 텍스트를 입력해 보았습니다.')
+           
