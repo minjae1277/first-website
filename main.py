@@ -5,7 +5,7 @@ st.title('정우진 팬클럽 Offecil site')
 
 #특수 이모티콘 삽입 예시
 #emogi: https://streamlit-emogi-shortcodes-streamlit-app-gwck.streamlit.app/
-st.title('해피 :sunglasses:')
+st.title('우진핑 :sunglasses:')
 
 # header 적용
 st.header(' 공식 팬클럽 사이트:sparkles:')
