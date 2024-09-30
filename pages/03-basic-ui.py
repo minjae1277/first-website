@@ -53,6 +53,6 @@ title = st.text_input(
 st.write(f'당신이 선택한 몸무게:violet[{title}]')
 # 슬라이더
 values = st.slider(
-  '범위의 값을 다음과 같이 지정할 수 있어요:sparkles:', #질문
+  '자신이 희망하는 몸무게의 값을 다음과 같이 지정할 수 있어요:sparkles:', #질문
   0.0,100.0, (25.0, 75.0))
 st.write('선택 범위:', values)
