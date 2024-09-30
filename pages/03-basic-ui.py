@@ -17,7 +17,7 @@ if button:
 #파일 다운로드 버튼
 #샘플 데이터 생성
 # Dateeframe이란, pandas라이브러리에서 제공하는 2차원 데이터  구조(액셀과 유사)
-dateframe = pd.Dateframe({
+dataframe = pd.Dateframe({
   'first column': ['kor''eng''math''science'],
   'second column': [10,20,30,40]
 })
