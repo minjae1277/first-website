@@ -50,7 +50,7 @@ title = st.text_input(
   label='희망하는 몸무게는?',
   placeholder='몸무게를 입력해 주세요'
 )
-st.write(f'당신이 선택한 여행지:violet[{title}]')
+st.write(f'당신이 선택한 몸무게:violet[{title}]')
 # 슬라이더
 values = st.slider(
   '범위의 값을 다음과 같이 지정할 수 있어요:sparkles:', #질문
