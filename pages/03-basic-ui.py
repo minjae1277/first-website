@@ -47,8 +47,8 @@ else:
      st.write("당신에 대해 :red[알고 싶어요]:grey_exclmation:")
 #텍스트 입력
 title = st.text_input(
-  label='가고 싶은 여행지가 있나요?',
-  placeholder='여행지를 입력해 주세요'
+  label='희망하는 몸무게는?',
+  placeholder='몸무게를 입력해 주세요'
 )
 st.write(f'당신이 선택한 여행지:violet[{title}]')
 # 슬라이더
