@@ -34,3 +34,8 @@ agree = st.checkbox('동의 하십니ㄲr?')
 if agree:
       st.write('동의해주셔서 감사합니ㄷr :100:')
 
+#라디오 선택 버튼
+mbti = st.radio(
+  '당신의 MBTI는 무엇입니까?',
+  ('ISTJ', 'ENFP','선택지 없음'))
+
