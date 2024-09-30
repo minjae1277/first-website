@@ -40,8 +40,8 @@ mbti = st.radio(
   ('ISTJ', 'ENFP' ,'선택지 없음'))
 
 if mbti =='ISTJ':
-   st.write(당신은 :blue[현실주의자] 이시네요')
+   st.write('당신은 :blue[현실주의자] 이시네요')
   elif mbti == 'ENFP':
-       st.write(당신은 :green[활동가] 이시네요')
+       st.write('당신은 :green[활동가] 이시네요')
  else:
    st.write("당신에 대해 :red[알고 싶어요]:grey_exclmation:")
