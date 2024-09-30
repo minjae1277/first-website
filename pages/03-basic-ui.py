@@ -46,7 +46,7 @@ elif mbti == '채소':
 else:
      st.write("당신에 대해 :red[알고 싶어요]:grey_exclmation:")
 #텍스트 입력
-title = st.text-input(
+title = st.text_input(
   label='가고 싶은 여행지가 있나요?',
   placeholder='여행지를 입력해 주세요'
 )
