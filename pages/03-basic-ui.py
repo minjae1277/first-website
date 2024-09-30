@@ -40,8 +40,8 @@ mbti = st.radio(
   ('고기', '채소','선택지 없음'))
 
 if mbti =='고기':
-   st.write('당신은 :blue[현실주의자] 이시네요')
+   st.write('당신은 :blue[돼지] 이시네요')
 elif mbti == '채소':
-    st.write('당신은 :green[활동가] 이시네요')
+    st.write('당신은 :green[건강한사람] 이시네요')
 else:
      st.write("당신에 대해 :red[알고 싶어요]:grey_exclmation:")
