@@ -37,7 +37,7 @@ if agree:
 #라디오 선택 버튼
 mbti = st.radio(
   '당신의 MBTI는 무엇입니까?',
-  ('ISTJ', 'ENFP' ,'선택지 없음'))
+  ('ISTJ', 'ENFP','선택지 없음'))
 
 if mbti =='ISTJ':
    st.write('당신은 :blue[현실주의자] 이시네요')
