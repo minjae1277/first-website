@@ -23,25 +23,34 @@ def generate_schedule(teams, start_date):
             schedule.append((teams[i], teams[j], match_date))
     return schedule
 
+# 세션 상태 초기화
+if 'teams' not in st.session_state:
+    st.session_state.teams = []
+if 'schedule' not in st.session_state:
+    st.session_state.schedule = []
+if 'start_date' not in st.session_state:
+    st.session_state.start_date = datetime.date.today()
+
 # 팀 생성 버튼
 button = st.button('팀 번호를 생성해 주세요!')
 
 if button:
-    teams = [f'팀 {i+1}: {generate_lotto()}' for i in range(5)]
+    st.session_state.teams = [f'팀 {i + 1}: {generate_lotto()}' for i in range(5)]
     
     st.subheader("생성된 팀:")
-    for team in teams:
+    for team in st.session_state.teams:
         st.write(team)
 
-    # 경기 일정 생성을 위한 시작 날짜 입력
-    start_date = st.date_input("경기 시작일 선택:", datetime.date.today())
-    
-    # 경기 일정 생성 버튼
-    if st.button('경기 일정을 생성해 주세요!'):
-        schedule = generate_schedule(teams, start_date)
-        
-        st.subheader("생성된 경기 일정:")
-        for match in schedule:
-            st.write(f"{match[0]} vs {match[1]} - 날짜: {match[2].strftime('%Y-%m-%d')}")
+# 경기 일정 생성을 위한 시작 날짜 입력
+st.session_state.start_date = st.date_input("경기 시작일 선택:", st.session_state.start_date)
 
-    st.write(f"생성된 시각: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
+# 경기 일정 생성 버튼
+if st.button('경기 일정을 생성해 주세요!'):
+    st.session_state.schedule = generate_schedule(st.session_state.teams, st.session_state.start_date)
+    
+    st.subheader("생성된 경기 일정:")
+    for match in st.session_state.schedule:
+        st.write(f"{match[0]} vs {match[1]} - 날짜: {match[2].strftime('%Y-%m-%d')}")
+
+# 생성된 시각 표시
+st.write(f"생성된 시각: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
