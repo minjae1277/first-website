@@ -2,7 +2,7 @@ import streamlit as st
 import random
 import datetime
 
-st.title(':sparkles:우진이 배구팀 및 경기 일정 생성기:sparkles:')
+st.title(':sparkles: 배구팀 및 경기 일정 생성기:sparkles:')
 
 # 로또 번호 생성 함수
 def generate_lotto():
