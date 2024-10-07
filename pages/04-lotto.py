@@ -8,7 +8,7 @@ def generate_lotto():
     lotto = set()
 
     while len(lotto) < 6:
-        number = random.randint(1, 46)
+        number = random.randint(1, 27)
         lotto.add(number)
 
     lotto = list(lotto)
