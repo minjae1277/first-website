@@ -4,7 +4,7 @@ import datetime
 
 st.title(':sparkles:로또 생성기:sparkles:')
 
-def generatem_lotto():
+def generate_lotto():
     lotto = set()
 
     while len(lotto) < 6:
