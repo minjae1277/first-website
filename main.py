@@ -1,11 +1,11 @@
 import streamlit as st
 
 #타이틀 적용 예시
-st.title('정우진 팬클럽 Offecil site')
+st.title('은진쌤 팬카페 Offecil site')
 
 #특수 이모티콘 삽입 예시
 #emogi: https://streamlit-emogi-shortcodes-streamlit-app-gwck.streamlit.app/
-st.title('우진핑 :sunglasses:')
+st.title('은진T^-^ :sunglasses:')
 
 # header 적용
 st.header(' 공식 팬클럽 사이트:sparkles:')
